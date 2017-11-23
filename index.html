@@ -1,0 +1,15 @@
+<ul id="list">
+</ul>
+<script>
+var pages = [
+  'user-agent'
+]
+
+var $list = document.getElementById('list')
+
+for (var i = 0; i < pages.length; i++) {
+  var $item = document.createElement('li')
+  $item.innerHTML = '<a href="' + pages[i] + '.html">' + pages[i] + '</a>'
+  $list.appendChild($item)
+}
+</script>
